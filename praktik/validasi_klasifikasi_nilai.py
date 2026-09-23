@@ -9,14 +9,14 @@ try:
     tugas = float(teks_tugas)
     hadir = float(teks_hadir)
 except ValueError:
-    print("Masukkan ditolak: seluruh data harus berupa angka.")
+    print("Masukan ditolak: seluruh data harus berupa angka.")
 else:
     if not (0 <= ujian <= 100):
-        print("Masukkan ditolak: nilai ujian di luar rentang 0 sampai 100.")
+        print("Masukan ditolak: nilai ujian di luar rentang 0 sampai 100.")
     elif not (0 <= tugas <= 100):
-        print("Masukkan ditolak: nilai tugas di luar rentang 0 sampai 100.")
+        print("Masukan ditolak: nilai tugas di luar rentang 0 sampai 100.")
     elif not (0 <= hadir <= 100):
-        print("Masukkan ditolak: kehadiran di luar rentang 0 sampai 100.") 
+        print("Masukan ditolak: kehadiran di luar rentang 0 sampai 100.") 
     else:
         akhir = 0.6 * ujian + 0.4 * tugas
         print(f"Nilai akhir = {akhir:.2f}")  
